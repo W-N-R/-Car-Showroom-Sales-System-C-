@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-	ShowRoom showroom("Car Showroom", "123, ABC Street, XYZ City", 1234567890, "waleednaeem133@gmail.com", 9119);
+	ShowRoom showroom("WNR Motors", "Johar town Lahore, Punjab, Pakistan","+92-326-1234567", "wnr2901@gmail.com", "(NTN) 24L-6023");
 	showroom.display();
 
 	return 0;
