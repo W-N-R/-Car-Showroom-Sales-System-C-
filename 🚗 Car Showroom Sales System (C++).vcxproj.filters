@@ -26,5 +26,14 @@
     <ClInclude Include="Showroom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Cars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Used_Cars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Imported_Cars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

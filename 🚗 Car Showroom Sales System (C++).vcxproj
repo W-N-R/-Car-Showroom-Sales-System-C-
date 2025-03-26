@@ -131,7 +131,10 @@
     <ClCompile Include="simulation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cars.h" />
+    <ClInclude Include="Imported_Cars.h" />
     <ClInclude Include="Showroom.h" />
+    <ClInclude Include="Used_Cars.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
