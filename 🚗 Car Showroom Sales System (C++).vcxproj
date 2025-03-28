@@ -132,7 +132,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cars.h" />
+    <ClInclude Include="Customer.h" />
+    <ClInclude Include="Employee.h" />
     <ClInclude Include="Imported_Cars.h" />
+    <ClInclude Include="Sale.h" />
     <ClInclude Include="Showroom.h" />
     <ClInclude Include="Used_Cars.h" />
   </ItemGroup>
