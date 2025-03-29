@@ -15,6 +15,7 @@ protected:
     string transmission;
     string chassisNumber;
 public:
+	Cars() {}
     Cars(string model, int year, double price, double engineCapacity, string transmission, string chassisNumber);
     virtual void display() const;
     virtual double getFinalPrice() const;
@@ -43,4 +44,4 @@ double Cars::getFinalPrice() const {
     return price;
 }
 
-#endif // CARS_H
+#endif 

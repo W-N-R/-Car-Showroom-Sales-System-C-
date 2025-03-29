@@ -34,4 +34,4 @@ Cars* Seller::sellCar(string model, int year, double price, double engineCapacit
     return new Cars(model, year, price, engineCapacity, transmission, chassisNumber);
 }
 
-#endif // SELLER_H
+#endif 

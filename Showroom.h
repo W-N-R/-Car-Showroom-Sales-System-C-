@@ -4,7 +4,6 @@
 
 #include "Cars.h"
 #include "Seller.h"
-#include "Buyer.h"
 #include <iostream> 
 #include <string>
 using namespace std;
@@ -25,8 +24,7 @@ public:
     Cars* getCar(int index);
     void sellCar(int index);
     int getCarCount() const;
-    void generateReceipt(Cars* car, const Buyer& buyer);
-
+    void generateReceipt(Cars* car);
     void buyCarFromCustomer(Seller seller);
     ~ShowRoom();
 };
@@ -38,12 +36,12 @@ ShowRoom::ShowRoom(string name, string address, string contact, string email, st
     this->email = email;
     sales_tax_registration_number = sale_tax;
 }
-
 void ShowRoom::display() {
-    cout << "**********************************************************************\n";
-    cout << "**********************  " << Name_of_showroom << "  **********************\n";
+    cout << "****************************************************************************************************************************************************\n";
+    cout << "      *******************************************************|    " << Name_of_showroom <<       "  |*************************************************************\n";
+    cout << "Owner: WNR"<<"                                                .    .    .    .    .    ." << endl;
     cout << "Contact: " << contact_number << "\nEmail: " << email << "\nSales Tax: " << sales_tax_registration_number << "\n";
-    cout << "**********************************************************************\n";
+    cout << "****************************************************************************************************************************************************\n";
 }
 
 void ShowRoom::addCar(Cars* car) {
@@ -72,7 +70,7 @@ Cars* ShowRoom::getCar(int index) {
 
 void ShowRoom::sellCar(int index) {
     if (index >= 0 && index < carCount) {
-        generateReceipt(cars[index],);
+        generateReceipt(cars[index]);
         delete cars[index];
         for (int i = index; i < carCount - 1; i++) {
             cars[i] = cars[i + 1];
@@ -88,13 +86,13 @@ int ShowRoom::getCarCount() const {
     return carCount;
 }
 
-void ShowRoom::generateReceipt(Cars* car, const Buyer& buyer) {
+void ShowRoom::generateReceipt(Cars* car) {
     display();
     cout << "Receipt for Purchased Car:\n";
     car->display();
-    buyer.displayBuyerInfo(); // Show buyer info
     cout << "Total Price: $" << car->getFinalPrice() << "\n";
-    cout << "Thank you for your purchase!\n";
+    cout << "-----------------------------------------------------------Thank you for your purchase!------------------------------------------------------------\n";
+	cout << "****************************************************************************************************************************************************\n";
 }
 
 void ShowRoom::buyCarFromCustomer(Seller seller) {
@@ -120,4 +118,4 @@ ShowRoom::~ShowRoom() {
         delete cars[i];
 }
 
-#endif // SHOWROOM_H
+#endif
