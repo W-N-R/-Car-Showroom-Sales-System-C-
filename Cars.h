@@ -20,8 +20,8 @@ protected:
 public:
 	Cars() {}
 	Cars(string, int, double, double, string, string);
-	virtual void display();
-	virtual double getFinalPrice();
+	 void display();
+	 double getFinalPrice();
 	string getModel();
 
 };
@@ -48,4 +48,4 @@ string Cars::getModel() {
 	return model;
 }
 
-#endif // !CARS_H
+#endif 

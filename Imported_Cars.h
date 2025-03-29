@@ -14,8 +14,9 @@ class ImportedCar : public Cars {
 	string auctionDate;
 	string auctionGrade;
 public:
+	ImportedCar() {}
 	ImportedCar(string, int, double, double, string, string, string, string);
-	void display() override {
+	void display() {
 		Cars::display();
 		cout << "Auction Date: " << auctionDate << endl;
 		cout << "Auction Grade: " << auctionGrade << endl;

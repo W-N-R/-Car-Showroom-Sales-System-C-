@@ -20,6 +20,7 @@ class ShowRoom {
 	string email;
 	string sales_tax_registration_number;
 public:
+	ShowRoom();
 	ShowRoom(string, string, string, string, string);
 	void display();
 	};

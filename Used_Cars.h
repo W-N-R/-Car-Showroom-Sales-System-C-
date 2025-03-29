@@ -16,11 +16,13 @@ using namespace std;
 class UsedCar : public Cars {
 	string registrationNumber;
 public:
+	UsedCar() {}
 	UsedCar(string, int, double, double, string, string, string);
-	void display() override {  // polymorphism ka concept use kia ha 
+	void display()  {  // polymorphism ka concept use kia ha 
 		Cars::display();       //(base class kay fuction main bas addition ho gay gii)
 		cout << "Registration: " << registrationNumber << endl;
 	}
+
 };
 
 UsedCar::UsedCar(string model, int manufactureYear, double price, double engineSize, string transmission, string chassisNumber, string registrationNumber) {
@@ -32,5 +34,6 @@ UsedCar::UsedCar(string model, int manufactureYear, double price, double engineS
 	this->chassisNumber = chassisNumber;
 	this->registrationNumber = registrationNumber;
 }
+
 
 #endif
