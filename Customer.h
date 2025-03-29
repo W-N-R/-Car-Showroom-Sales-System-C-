@@ -1,41 +1,36 @@
 #pragma once
-#ifndef Customer_H
-#define Customer_H
-
+#ifndef CUSTOMER_H
+#define CUSTOMER_H
 
 #include <iostream>
 #include <string>
-#include "Cars.h"
 using namespace std;
 
 class Customer {
-	string name;
-	string address;
-	string contact;
-	string email;
-	string CNIC;
+private:
+    string name;
+    string contactNumber;
+    string email;
+    string address;
 public:
-	Customer(string, string, string, string, string);
-	void display();
+    Customer(string name, string contact, string email, string address);
+    void displayCustomerInfo() const;
+    string getName() const;
+    string getContact() const;
+    string getEmail() const;
+    string getAddress() const;
 };
 
-Customer::Customer(string name, string address, string contact, string email, string CNIC) {
-	this->name = name;
-	this->address = address;
-	this->contact = contact;
-	this->email = email;
-	this->CNIC = CNIC;
+Customer::Customer(string name, string contact, string email, string address) {
+    this->name = name;
+    this->contactNumber = contact;
+    this->email = email;
+    this->address = address;
 }
 
-void Customer::display() {
-	cout << "****************************************************************************************************************************************************\n" << endl;
-	cout << "Name: " << name << endl;
-	cout << "Address: " << address << endl;
-	cout << "Contact: " << contact << endl;
-	cout << "Email: " << email << endl;
-	cout << "CNIC: " << CNIC << endl;
-	cout << "****************************************************************************************************************************************************\n" << endl;
+void Customer::displayCustomerInfo() const {
+    cout << "Customer Details:\n";
+    cout << "Name: " << name << "\nContact: " << contactNumber << "\nEmail: " << email << "\nAddress: " << address << "\n";
 }
 
-#endif Customer_H
-
+#endif // CUSTOMER_H
