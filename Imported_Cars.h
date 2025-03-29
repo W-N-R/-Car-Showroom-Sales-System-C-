@@ -1,36 +1,26 @@
 #pragma once
 #ifndef IMPORTED_CARS_H
-#define IPORTED_CARS__H
+#define IMPORTED_CARS_H
 
 #include "Cars.h"
-#include <iostream>
-#include <string>
-using namespace std;
-
-
-/////////////////////////////////IMPORTED CAR CLASS////////////////////////////////////////
 
 class ImportedCar : public Cars {
-	string auctionDate;
-	string auctionGrade;
+    string importDate;
+    string grade;
 public:
-	ImportedCar() {}
-	ImportedCar(string, int, double, double, string, string, string, string);
-	void display() {
-		Cars::display();
-		cout << "Auction Date: " << auctionDate << endl;
-		cout << "Auction Grade: " << auctionGrade << endl;
-	}
+    ImportedCar(string model, int year, double price, double engineCapacity, string transmission, string chassisNumber, string importDate, string grade);
+    void display() const override;
 };
 
-ImportedCar::ImportedCar(string model, int manufactureYear, double price, double engineSize, string transmission, string chassisNumber, string auctionDate, string auctionGrade) {
-	this->manufactureYear = manufactureYear;
-	this->price = price;
-	this->engineSize = engineSize;
-	this->transmission = transmission;
-	this->chassisNumber = chassisNumber;
-	this->auctionDate = auctionDate;
-	this->auctionGrade = auctionGrade;
+ImportedCar::ImportedCar(string model, int year, double price, double engineCapacity, string transmission, string chassisNumber, string importDate, string grade)
+    : Cars(model, year, price, engineCapacity, transmission, chassisNumber) {
+    this->importDate = importDate;
+    this->grade = grade;
 }
 
-#endif IMPOTED_CARS_H
+void ImportedCar::display() const {
+    Cars::display();
+    cout << "Import Date: " << importDate << "\nGrade: " << grade << "\n";
+}
+
+#endif // IMPORTED_CARS_H
