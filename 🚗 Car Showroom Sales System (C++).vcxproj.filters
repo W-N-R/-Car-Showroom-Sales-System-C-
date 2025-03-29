@@ -41,7 +41,10 @@
     <ClInclude Include="Employee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sale.h">
+    <ClInclude Include="Seller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Buyer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

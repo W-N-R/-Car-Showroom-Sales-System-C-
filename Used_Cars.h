@@ -2,38 +2,23 @@
 #ifndef USED_CARS_H
 #define USED_CARS_H
 
-#include <iostream>
-#include <string>
 #include "Cars.h"
-using namespace std;
-
-
-
-
-/////////////////////////////////USED CAR CLASS////////////////////////////////////////
-
 
 class UsedCar : public Cars {
-	string registrationNumber;
+    string registrationNumber;
 public:
-	UsedCar() {}
-	UsedCar(string, int, double, double, string, string, string);
-	void display()  {  // polymorphism ka concept use kia ha 
-		Cars::display();       //(base class kay fuction main bas addition ho gay gii)
-		cout << "Registration: " << registrationNumber << endl;
-	}
-
+    UsedCar(string model, int year, double price, double engineCapacity, string transmission, string chassisNumber, string registrationNumber);
+    void display() const override;
 };
 
-UsedCar::UsedCar(string model, int manufactureYear, double price, double engineSize, string transmission, string chassisNumber, string registrationNumber) {
-	this->model = model;
-	this->manufactureYear = manufactureYear;
-	this->price = price;
-	this->engineSize = engineSize;
-	this->transmission = transmission;
-	this->chassisNumber = chassisNumber;
-	this->registrationNumber = registrationNumber;
+UsedCar::UsedCar(string model, int year, double price, double engineCapacity, string transmission, string chassisNumber, string registrationNumber)
+    : Cars(model, year, price, engineCapacity, transmission, chassisNumber) {
+    this->registrationNumber = registrationNumber;
 }
 
+void UsedCar::display() const {
+    Cars::display();
+    cout << "Registration Number: " << registrationNumber << "\n";
+}
 
-#endif
+#endif // USED_CARS_H

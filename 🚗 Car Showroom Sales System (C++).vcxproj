@@ -131,11 +131,12 @@
     <ClCompile Include="simulation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Buyer.h" />
     <ClInclude Include="Cars.h" />
     <ClInclude Include="Customer.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="Imported_Cars.h" />
-    <ClInclude Include="Sale.h" />
+    <ClInclude Include="Seller.h" />
     <ClInclude Include="ShowRoom.h" />
     <ClInclude Include="Used_Cars.h" />
   </ItemGroup>
