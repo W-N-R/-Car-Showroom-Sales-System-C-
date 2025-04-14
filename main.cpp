@@ -21,12 +21,12 @@ int main() {
     ShowRoom showroom("Wali Motors", "62B-2", "+92-3268666254", "walimotors@gmail.com", "TX-9119");
     showroom.addCar(new Cars("Toyota Corolla", 2023, 520000, 1.8, "Automatic", "CH12345"));
     showroom.addCar(new UsedCar("Honda Civic", 2017, 350000, 1.5, "Manual", "CH67890", "REG-9876"));
-    showroom.addCar(new Cars("BMW X5", 2022, 590000, 3.0, "Automatic", "CH54321"));
+    showroom.addCar(new Cars("BMW", 2022, 590000, 3.0, "Automatic", "CH54321"));
     showroom.addCar(new Cars("Toyota Fortuner", 2014, 890000, 1.8, "Automatic", "CH12345"));
     showroom.addCar(new UsedCar("Honda City", 2008, 430000, 1.5, "Manual", "CH67890", "REG-9876"));
     showroom.addCar(new Cars("Audi A7", 2025, 580000, 3.0, "Automatic", "CH54321"));
     showroom.addCar(new ImportedCar("Mercedes-Benz S-Class", 2023, 800000, 4.0, "Automatic", "CH98765", "2024-01-15", "Grade A"));
-    showroom.addCar(new ImportedCar("Lexus RX", 2022, 120000, 3.5, "Automatic", "CH87654", "2023-12-10", "Grade B"));
+    showroom.addCar(new ImportedCar("meri car", 2022, 120000, 3.5, "Automatic", "CH87654", "2023-12-10", "Grade B"));
 
 
     showroom.display();

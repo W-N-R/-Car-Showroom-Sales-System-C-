@@ -32,8 +32,12 @@ Cars::Cars(string model, int year, double price, double engineCapacity, string t
 }
 
 void Cars::display() const {
-    cout << "Model: " << model << "\nYear: " << year << "\nPrice: $" << price << "\nEngine Capacity: "
-        << engineCapacity << "L\nTransmission: " << transmission << "\nChassis No: " << chassisNumber << "\n";
+    cout << "Model: " << model << endl;
+    cout << "Year: " << year << endl;
+    cout << "Price: $" << price << endl;
+    cout << "Engine Capacity : " << engineCapacity << "L" << endl;
+    cout << "Transmission: " << transmission << endl;
+    cout << "Chassis No : " << chassisNumber << endl;
 }
 
 double Cars::getFinalPrice() const {

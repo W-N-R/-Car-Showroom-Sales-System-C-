@@ -107,7 +107,7 @@ void ShowRoom::buyCarFromCustomer(Seller seller) {
     cout << "Engine Capacity: "; cin >> engineCapacity;
     cout << "Transmission (Manual/Automatic): "; cin >> transmission;
     cout << "Chassis Number: "; cin >> chassisNumber;
-
+	cout << "****************************************************************************************************************************************************\n";
     Cars* car = seller.sellCar(model, year, price, engineCapacity, transmission, chassisNumber);
     addCar(car);
     cout << "Car successfully added to showroom inventory.\n";
