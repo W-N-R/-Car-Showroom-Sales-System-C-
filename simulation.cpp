@@ -116,3 +116,84 @@
 //
 //
 
+//#include <iostream>
+//using namespace std;
+//
+//class a {
+//public:
+//	a() {
+//		cout << "Hello from A " << endl;
+//	}
+//	~a() {
+//		cout << "Bye from a " << endl;
+//	}
+//};
+//
+//class b:public a {
+//public:
+//	b() {
+//		cout << "Hello from B " << endl;
+//	}
+//	~b() {
+//		cout << "Bye from B " << endl;
+//	}
+//};
+//
+//class c :public b {
+//public:
+//	c() {
+//		cout << "Hello from C " << endl;
+//	}
+//	~c() {
+//		cout << "Bye from C " << endl;
+//	}
+//};
+//
+//
+//
+//
+//
+//
+//class sim {
+//public :
+//	sim() {
+//		cout << "including sim" << endl;
+//	}
+//	~sim() {
+//		cout << "Removing sim" << endl;
+//	}
+//};
+//
+//class mobile {
+//private :
+//	sim mobile_sim;
+//public:
+//	mobile() {
+//		cout << "Mobile is ready" << endl;
+//	}
+//	~mobile() {
+//		cout << "dissembling the mobile" << endl;
+//	}
+//};
+//
+//int main() {
+//	c c_object;
+//	cout << endl;
+//	cout << endl;
+//	mobile Mobi6;
+//	return 0;
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//
+//class mango {
+//private:
+//	int name;
+//public:
+//	mango();
+//};
+//
+//mango::mango(){
+//} cv                                                                                                                                         v 

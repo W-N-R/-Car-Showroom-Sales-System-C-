@@ -12,7 +12,9 @@ private:
     string name;
     string contactNumber;
     string email;
+
 public:
+
     Seller(string name, string contact, string email);
     void displaySellerInfo() const;
     Cars* sellCar(string model, int year, double price, double engineCapacity, string transmission, string chassisNumber);
